@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">
+		/*setInterval(()=>{
+			console.log("hi bruh")},500)
+		console.log("praise the lord")
+		console.log("how are you?")*/
+		let promiseobj=new Promise((resolve,reject)=>{
+			var time=Math.random();
+			console.log(time)
+			if(time<.5)
+				return resolve("data is there from server")
+			else
+				return reject("server crashed")
+		})
+		console.log(promiseobj)
+		console.log("hello")
+	</script>
+</head>
+<body>
+
+</body>
+</html>
